@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="mypage">
+        <div><button type="button" onclick={func(1)}>Paint yellow</button></div>
+        <div><button type="button" onclick={func(2)}>Paint green</button></div>
+        <div><button type="button" onclick={func(3)}>Paint pink</button></div>
+        <div><button type="button" onclick={func(4)}>Paint black</button></div>
+        <div><button type="button" onclick={func(5)}>Paint brown</button></div>
+
+        
+    </div>
+    <div><button type="reset" onclick={func(6)}>Reset</button></div>
+
+    <script>
+        let page= document.getElementById("mypage")
+        function colourbg(colour){
+            document.body.style.backgroundColor=colour;
+        }
+        function func(x){
+            if(x==1)
+                colourbg('yellow');
+            else if(x==2)
+                colourbg('green');
+            else if(x==3)
+                colourbg('pink');
+            else if(x==4)
+                colourbg('black');
+            else if(x==5)
+                colourbg('brown');
+            else if(x==6)
+                colourbg('white');
+            else;
+        }
+
+    </script>
+</body>
+</html>

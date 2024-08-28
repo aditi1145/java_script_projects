@@ -1,0 +1,15 @@
+body{
+    background-color: black;
+}
+
+.clock{
+    text-align: justify;
+    color: aqua;
+    text-decoration-line: blink;
+    position: absolute;
+    top:40%;
+    left:40%;
+    font-size: 60px;
+    font-family: Orbitron;
+    letter-spacing: 7px;
+}
